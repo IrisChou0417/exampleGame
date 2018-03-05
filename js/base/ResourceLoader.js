@@ -1,5 +1,5 @@
 //资源文件加载器, 确保canvas加载完后再进行渲染
-import {Resources} from './Resources.js'
+import {Resources} from './Resources.js';
 
 export class ResourceLoader {
   constructor () {
@@ -10,7 +10,7 @@ export class ResourceLoader {
       this.map.set(key, image);
     }
   }
-  onLoaded (callback) {
+  onLoaded (callback) { 
     let loadedCount = 0;
     for (let value of this.map.values()) {
       value.onload = () => {

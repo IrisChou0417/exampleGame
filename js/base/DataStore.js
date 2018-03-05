@@ -1,6 +1,5 @@
 //变量缓存器，相当于中间站
 
-
 export class DataStore {
   static getInstance() {
     if (!DataStore.instance) {
